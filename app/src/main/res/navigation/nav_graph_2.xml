@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_2"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.pry20231067.oficial.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_souvenirsFragment"
+            app:destination="@id/souvenirsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pry20231067.oficial.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_placeItemFragment"
+            app:destination="@id/placeItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeItemFragment"
+        android:name="com.pry20231067.oficial.fragments.PlaceItemFragment"
+        android:label="fragment_place_item"
+        tools:layout="@layout/fragment_place_item" />
+    <fragment
+        android:id="@+id/souvenirsFragment"
+        android:name="com.pry20231067.oficial.fragments.SouvenirsFragment"
+        android:label="fragment_souvenirs"
+        tools:layout="@layout/fragment_souvenirs" />
+</navigation>
