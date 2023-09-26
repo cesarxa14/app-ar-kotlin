@@ -1,4 +1,4 @@
-package com.pry20231067.oficial.data
+package com.pry20231067.oficial.data.Place
 
 data class Place (
     val name: String,

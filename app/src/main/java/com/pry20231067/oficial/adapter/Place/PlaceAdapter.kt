@@ -1,14 +1,10 @@
-package com.pry20231067.oficial.adapter
+package com.pry20231067.oficial.adapter.Place
 
-import android.app.DirectAction
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.navigation.NavController
-import androidx.navigation.NavDirections
 import androidx.recyclerview.widget.RecyclerView
 import com.pry20231067.oficial.R
-import com.pry20231067.oficial.data.Place
-import com.pry20231067.oficial.fragments.HomeFragmentDirections
+import com.pry20231067.oficial.data.Place.Place
 
 
 class PlaceAdapter(private val placeList: List<Place>): RecyclerView.Adapter<PlaceViewHolder>() {

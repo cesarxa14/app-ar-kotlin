@@ -1,4 +1,6 @@
-package com.pry20231067.oficial.data
+package com.pry20231067.oficial.data.Souvenir
+
+import com.pry20231067.oficial.data.Souvenir.Souvenir
 
 class SouvenirProvider {
     companion object{

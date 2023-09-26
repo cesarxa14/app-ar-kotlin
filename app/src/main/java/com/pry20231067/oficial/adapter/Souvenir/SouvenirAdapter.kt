@@ -1,11 +1,10 @@
-package com.pry20231067.oficial.adapter
+package com.pry20231067.oficial.adapter.Souvenir
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.pry20231067.oficial.R
-import com.pry20231067.oficial.data.Place
-import com.pry20231067.oficial.data.Souvenir
+import com.pry20231067.oficial.data.Souvenir.Souvenir
 
 
 class SouvenirAdapter(private val souvenirList: List<Souvenir>): RecyclerView.Adapter<SouvenirViewHolder>() {

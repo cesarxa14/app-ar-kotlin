@@ -8,21 +8,24 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.pry20231067.oficial.R
-import com.pry20231067.oficial.adapter.Souvenir.SouvenirAdapter
-import com.pry20231067.oficial.data.Souvenir.SouvenirProvider
-import com.pry20231067.oficial.databinding.FragmentSouvenirsBinding
+import com.pry20231067.oficial.adapter.News.NewsAdapter
+import com.pry20231067.oficial.adapter.Review.ReviewAdapter
+import com.pry20231067.oficial.data.News.NewProvider
+import com.pry20231067.oficial.data.Review.ReviewProvider
+import com.pry20231067.oficial.databinding.FragmentHomeBinding
+import com.pry20231067.oficial.databinding.FragmentNewsBinding
 
-class SouvenirsFragment : Fragment() {
 
-    private var _binding: FragmentSouvenirsBinding? = null
+class NewsFragment : Fragment() {
+
+    private var _binding: FragmentNewsBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentSouvenirsBinding.inflate(layoutInflater, container, false)
-        // Inflate the layout for this fragment
+        _binding = FragmentNewsBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
@@ -32,9 +35,9 @@ class SouvenirsFragment : Fragment() {
     }
 
     fun initRecyclerView(view: View){
-        val recyclerView =view.findViewById<RecyclerView>(R.id.recycler_view_souvenir)
+        val recyclerView =view.findViewById<RecyclerView>(R.id.recycler_view_news)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = SouvenirAdapter(SouvenirProvider.listSouvenir)
+        recyclerView.adapter = NewsAdapter(NewProvider.listNews)
     }
 
 }

@@ -1,4 +1,6 @@
-package com.pry20231067.oficial.data
+package com.pry20231067.oficial.data.Place
+
+import com.pry20231067.oficial.data.Place.Place
 
 class PlaceProvider {
     companion object{

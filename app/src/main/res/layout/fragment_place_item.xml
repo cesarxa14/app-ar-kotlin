@@ -33,8 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/user"
-
-
+                android:scaleType="fitXY"
                 />
 
         </androidx.cardview.widget.CardView>
@@ -88,6 +87,16 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rounded_button"
                 android:text="Ver en Mapa"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:id="@+id/btnResenas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_button_warning"
+                android:text="Ver Reseñas"
                 android:padding="10dp"
                 />
 
