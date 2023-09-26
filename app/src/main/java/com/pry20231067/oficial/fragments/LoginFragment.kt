@@ -47,7 +47,8 @@ class LoginFragment : Fragment() {
 
         val btnLogin = binding.buttonLogin
         btnLogin.setOnClickListener{
-            login()
+            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToNavGraph2())
+//            login()
         }
     }
 
@@ -63,12 +64,12 @@ class LoginFragment : Fragment() {
             val passwordValue = binding.editTextPassword.text.toString().trim()
             val userLogin = LoginRequest(usernameValue, passwordValue)
             val call = getRetrofit().create(ApiService::class.java).login(url, userLogin)
-            val responseLogin = call.body()
+//            val responseLogin = call.body()
             activity?.runOnUiThread{
                 if(call.isSuccessful){
 //                    val userInfo = responseLogin?.data
-                    val intent = Intent(activity, PagesActivity()::class.java)
-                    intent.putExtra("userID", responseLogin?.data?._id)
+//                    val intent = Intent(activity, PagesActivity()::class.java)
+//                    intent.putExtra("userID", responseLogin?.data?._id)
                     findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToNavGraph2())
                 }else{
                     Toast.makeText(context, "Invalid Login", Toast.LENGTH_SHORT)

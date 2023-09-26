@@ -1,0 +1,54 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<resources>
+<!--    &lt;!&ndash; Auth&ndash;&gt;-->
+<!--    <string name="input_hint_firstname">Firstname</string>-->
+<!--    <string name="input_hint_lastname">Lastname</string>-->
+<!--    <string name="input_hint_email">Email</string>-->
+<!--    <string name="input_hint_username">Username</string>-->
+<!--    <string name="input_hint_password">Password</string>-->
+<!--    <string name="button_text_sign_in">Sign In</string>-->
+<!--    <string name="button_text_sign_up">Sign Up</string>-->
+<!--    <string name="forgot_password">Forgot your password?</string>-->
+
+<!--    &lt;!&ndash;Home&ndash;&gt;-->
+<!--    <string name="home_title_welcome">Welcome</string>-->
+<!--    <string name="home_places_you_can_visit">Places you can visit</string>-->
+
+<!--    &lt;!&ndash;Place Item&ndash;&gt;-->
+<!--    <string name="place_item_btn_see_on_map">See on map</string>-->
+<!--    <string name="place_item_btn_see_reviews">See reviews</string>-->
+
+<!--    &lt;!&ndash;Reviews&ndash;&gt;-->
+<!--    <string name="review_header_title">Reviews</string>-->
+<!--    <string name="review_btn_add_review">Add</string>-->
+
+<!--    &lt;!&ndash;Add Review&ndash;&gt;-->
+<!--    <string name="add_review_header_title">Add Review</string>-->
+<!--    <string name="add_review_input_comment">Comment</string>-->
+<!--    <string name="add_review_btn_send">Send</string>-->
+
+<!--    &lt;!&ndash;News&ndash;&gt;-->
+<!--    <string name="news_header_title">News</string>-->
+
+<!--    &lt;!&ndash;Profile&ndash;&gt;-->
+<!--    <string name="profile_btn_stats">Stats</string>-->
+<!--    <string name="profile_btn_souvenirs">Souvenirs</string>-->
+<!--    <string name="profile_btn_edit">Edit</string>-->
+<!--    <string name="profile_btn_delete_account">Delete Account</string>-->
+
+<!--    &lt;!&ndash;Souvenirs&ndash;&gt;-->
+<!--    <string name="souvenirs_header_title">My Souvenirs</string>-->
+
+
+<!--    &lt;!&ndash;Edit Profile&ndash;&gt;-->
+<!--    <string name="edit_profile_header_title">Edit Profile</string>-->
+<!--    <string name="edit_profile_hint_firstname">Firstname</string>-->
+<!--    <string name="edit_profile_hint_lastname">Lastname</string>-->
+<!--    <string name="edit_profile_hint_email">Email</string>-->
+<!--    <string name="edit_profile_hint_username">Username</string>-->
+<!--    <string name="edit_profile_btn_submit">Edit</string>-->
+
+
+
+
+</resources>

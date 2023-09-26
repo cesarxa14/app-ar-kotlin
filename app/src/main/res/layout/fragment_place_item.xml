@@ -38,8 +38,6 @@
 
         </androidx.cardview.widget.CardView>
 
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -67,6 +65,7 @@
             >
 
             <TextView
+                android:id="@+id/title_place_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Centro de Lima"
@@ -74,29 +73,35 @@
                 />
 
             <TextView
+                android:id="@+id/description_place_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Description"
+                android:text="Una de las principales atracciones de las ciudades más longevas a lo largo del mundo entero, es la visita a su Centro Histórico."
                 android:textSize="15dp"
                 />
+
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_button"
-                android:text="Ver en Mapa"
+                android:background="@drawable/rounded_button_secondary"
+                android:text="@string/place_item_btn_see_on_map"
+                android:drawableEnd="@drawable/ic_maps"
                 android:padding="10dp"
                 />
 
             <Button
                 android:id="@+id/btnResenas"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_button_warning"
-                android:text="Ver Reseñas"
+                android:textColor="@color/white_app"
+                android:background="@color/black_app_secondary"
+                android:text="@string/place_item_btn_see_reviews"
+                android:drawableEnd="@drawable/ic_arrow_forward"
+                android:drawableTint="@color/white_app"
                 android:padding="10dp"
                 />
 

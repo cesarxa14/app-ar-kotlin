@@ -30,10 +30,6 @@ class RegisterFragment : Fragment() {
     ): View? {
         _binding = FragmentRegisterBinding.inflate(layoutInflater, container, false)
 
-        val sp = activity?.getSharedPreferences("MainPref", Context.MODE_PRIVATE)
-        val id = sp?.getString("id", null)
-
-        binding.buttonLogin.text = id
         buttonsNavigation()
         return binding.root
     }

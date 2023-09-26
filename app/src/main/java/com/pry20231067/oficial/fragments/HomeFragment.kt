@@ -21,6 +21,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.Locale
 
 
 class HomeFragment : Fragment() {
@@ -56,14 +57,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToProfileFragment())
         }
 
-        val item = view?.findViewById<CardView>(R.id.card_view_item_place)
-        item?.setOnClickListener{
-            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToPlaceItemFragment())
-        }
 
-        val toPlaceItem = binding.btnToPlaceItem
-        toPlaceItem?.setOnClickListener{
-            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToPlaceItemFragment())
+        val btnToForo = binding.btnToForo
+        btnToForo.setOnClickListener{
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToForoFragment())
         }
 
         val btnToNews = binding.btnToNews
@@ -75,7 +72,7 @@ class HomeFragment : Fragment() {
     fun initRecyclerView(view: View){
         val recyclerView =view.findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        adapter = PlaceAdapter(placeList)
+        adapter = PlaceAdapter(placeList, activity)
         recyclerView.adapter = adapter
 
     }

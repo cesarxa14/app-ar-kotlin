@@ -1,10 +1,13 @@
 package com.pry20231067.oficial.fragments
 
+import android.content.DialogInterface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.navigation.fragment.findNavController
 import com.pry20231067.oficial.Api.ApiService
 import com.pry20231067.oficial.Model.User
@@ -32,8 +35,19 @@ class ProfileFragment : Fragment() {
         cardSouvenir.setOnClickListener{
             findNavController().navigate(ProfileFragmentDirections.actionProfileFragmentToSouvenirsFragment())
         }
-        getUserInfo()
+
+        val btnEdit = binding.btnEditProfile
+        btnEdit.setOnClickListener {
+            findNavController().navigate(ProfileFragmentDirections.actionProfileFragmentToEditProfileFragment())
+        }
+
+        val btnDelete = binding.btnDeleteAccount
+        btnDelete.setOnClickListener {
+//            showDialog()
+        }
+//        getUserInfo()
         // Inflate the layout for this fragment
+
         return binding.root
     }
 
@@ -42,6 +56,27 @@ class ProfileFragment : Fragment() {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+    }
+
+//
+//    fun showDialog(){
+//        val alertDialogBuilder = AlertDialog.Builder(requireActivity())
+//        alertDialogBuilder.setTitle("Delete")
+//        alertDialogBuilder.setMessage("Are you sure?")
+//        alertDialogBuilder.setPositiveButton("Confirmar"){_, _ -> {
+//            requireActivity().finish()
+//        }}
+//        alertDialogBuilder.setNegativeButton("Cancel"){_, _ -> {
+//            Toast.makeText(context, "Cancel", Toast.LENGTH_SHORT).show()
+//        }}
+//
+//        val alertDialogBox = alertDialogBuilder.create()
+//        alertDialogBox.show()
+//    }
 
     private fun getUserInfo(){
         CoroutineScope(Dispatchers.IO).launch {
@@ -55,6 +90,11 @@ class ProfileFragment : Fragment() {
             }
         }
     }
+
+
+
+
+
 
 
 

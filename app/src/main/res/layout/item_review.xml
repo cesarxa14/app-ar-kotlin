@@ -9,9 +9,9 @@
         android:id="@+id/card_view_item_place"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="50dp"
+        android:layout_marginHorizontal="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:cardElevation="5dp"
+        app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:cardCornerRadius="15dp"
@@ -56,6 +56,7 @@
                     />
 
                 <RatingBar
+                    android:layout_gravity="center"
                     android:id="@+id/rating_review"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -63,7 +64,33 @@
                     android:numStars="5"
                     android:rating="4"
                     android:stepSize="1"
-                    android:background="@color/white_app"/>
+                    android:isIndicator="true"
+                    android:progressTint="@color/green_app"
+                    android:progressBackgroundTint="@color/white_app"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_like"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_dislike"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>

@@ -25,7 +25,7 @@
             android:textSize="30dp"
             android:textStyle="bold"
             android:textColor="@color/white_app"
-            android:text="Mis Recuerdos"
+            android:text="@string/souvenirs_header_title"
             />
 
     </androidx.appcompat.widget.LinearLayoutCompat>

@@ -21,7 +21,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:padding="10dp"
-        android:hint="Usuario"
+        android:hint="@string/input_hint_username"
         android:background="@color/white_app"
         android:inputType="text" />
 
@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:hint="Contraseña"
+        android:hint="@string/input_hint_password"
         android:padding="10dp"
         android:background="@color/white_app"
         android:inputType="textPassword" />
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/rounded_button"
-        android:text="Iniciar Sesión" />
+        android:text="@string/button_text_sign_in" />
 
     <Button
         android:id="@+id/buttonRegister"
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/rounded_button_secondary"
-        android:text="Registrate" />
+        android:text="@string/button_text_sign_up" />
 
     <TextView
         android:id="@+id/textViewForgotPassword"
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:text="¿Olvidaste tu contraseña?"
+        android:text="@string/forgot_password"
         android:textColor="@android:color/darker_gray" />
 
 </LinearLayout>

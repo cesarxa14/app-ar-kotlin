@@ -30,10 +30,6 @@
             android:id="@+id/action_registerFragment_to_nav_graph_2"
             app:destination="@id/nav_graph_2" />
     </fragment>
-    <include app:graph="@navigation/nav_graph_2">
-        <argument
-            android:name="myArg"
-            app:argType="string" />
-    </include>
+    <include app:graph="@navigation/nav_graph_2"/>
 
 </navigation>

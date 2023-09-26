@@ -3,39 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_app"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.ReviewFragment">
+    tools:context=".fragments.FavoriteNewsFragment">
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/ll_btn_add_review"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="10dp"
-        android:gravity="end"
-        android:layout_marginEnd="10dp"
-        >
-
-        <Button
-            android:id="@+id/btn_add_review"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/green_app"
-            android:text="@string/review_btn_add_review"
-            android:textColor="@color/white_app"
-            >
-
-        </Button>
-
-
-
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/ll_header_review"
+        android:id="@+id/ll_header_news"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -43,15 +16,16 @@
         android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ll_btn_add_review"
+        app:layout_constraintTop_toTopOf="parent"
 
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/review_header_title"
-            android:textSize="30dp"
+            android:text="Noticias Favoritas"
+            android:textColor="@color/white_app"
+            android:textSize="25dp"
             android:textStyle="bold"
             />
 
@@ -63,17 +37,17 @@
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ll_header_review"
+        app:layout_constraintTop_toBottomOf="@+id/ll_header_news"
         >
 
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_review"
+            android:id="@+id/recycler_view_news_favorites"
             android:layout_width="match_parent"
-            tools:listitem="@layout/item_review"
+            tools:listitem="@layout/item_news"
             android:layout_height="wrap_content"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
